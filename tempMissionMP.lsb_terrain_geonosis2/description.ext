@@ -1,0 +1,73 @@
+disabledAI = 1;
+
+disableChannels[] = {
+	{0, false,true }, //--- Global Chat
+	{1, true, true}, //--- Side Chat
+	{2, true, true}, //--- Command Chat
+	{3, true, true}, //--- Group Chat
+	{4, true, true}, //--- Vehicle Chat
+	{5, true, true}, //--- Direct Chat
+	{6, true, true} //--- System Chat
+};
+
+
+
+class ACEX_Fortify_Presets {
+    class myMissionObjects {
+        displayName = "big preset";
+        objects[] = {
+		{"Land_CncBarrierMedium_F",0, "Walls"},
+		{"Land_CncShelter_F",0, "Bunkers"},
+		{"Land_HBarrier_01_line_3_green_F",0, "Walls"},
+		{"Land_HBarrier_01_line_5_green_F",0, "Walls"},
+		{"Land_HBarrier_01_big_4_green_F",0, "Walls"},
+		{"Land_HBarrier_01_line_1_green_F",0, "Walls"},
+		{"Land_BagBunker_01_small_green_F",0, "Bunkers"},
+		{"Land_HBarrier_01_big_tower_green_F",0,"Bunkers"},
+		{"Land_BagFence_01_long_green_F",0, "Walls"},
+		{"Land_BagFence_01_round_green_F",0, "Walls"},
+		{"Land_SandbagBarricade_01_F",0, "Walls"},
+		{"Land_ConcreteHedgehog_01_F",0, "Objects"},
+		{"Land_DragonsTeeth_01_1x1_new_redwhite_F",0, "Objects"},
+		{"Land_Medevac_house_V1_F",0, "Objects"},
+		{"Land_HelipadCircle_F",0, "Objects"},
+		{"Land_Plank_01_4m_F",0, "Objects"},
+		{"Land_Plank_01_8m_F",0, "Objects"},
+		{"Dmns_UNSC_Concrete_Wall_Corner",0, "Walls"},
+		{"Dmns_UNSC_Concrete_Wall_Hub",0, "Walls"}, 
+		{"Dmns_UNSC_Concrete_Wall_Straight",0, "Walls"}, 
+		{"VES_Flag_UNSC",0, "Objects"},
+		{"Land_CamoNetVar_NATO", 0, "Objects"},
+		{"DMNS_UNSC_Barricade_01",0, "Objects"},
+		{"Land_Camping_Light_F",0, "Lights"},
+		{"Land_Small_Light_Column",0, "Lights"},
+		{"PortableHelipadLight_01_white_F",0, "Lights"},
+		{"Land_FloodLight_F", 0, "Lights"},
+		{"Land_PortableLight_double_F",0, "Lights"},
+		{"Land_PortableLight_single_F", 0, "Lights"},
+		{"Land_Camping_Light_F", 0, "Lights"},
+		{"Land_PortableLight_02_quad_olive_F",0, "Lights"},
+		{"Land_PortableLight_02_double_black_F",0, "Lights"},
+		{"Land_PortableLight_02_double_olive_F",0, "Lights"},
+		{"Land_OPTRE_M72S_barrier", 0, "Defences"},
+		{ "Land_OPTRE_M72_barrier",0, "Defences"},
+		{"Land_OPTRE_watchtower_woodland",0, "Defences"}, 
+		{"Land_OPTRE_watchtower_jungle",0, "Defences"},
+		{"Land_OPTRE_ONI_barrier",0, "Defences"}
+        };
+    };
+};
+
+class CfgRemoteExec 
+{
+    class Functions 
+    {
+        mode = 2; // 1 for whitelist, 2 for blacklist
+        jip = 0; // 1 to allow JIP, 0 to disallow
+
+        
+        class aceAddActions{ allowedTargets=2; };
+        // Add more functions as needed
+    };
+
+};
